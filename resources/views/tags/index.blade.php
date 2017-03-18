@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tags</title>
     <link rel="stylesheet" href="/css/bulma.css">
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
 
 <div class="section">
     <div class="container">
-        <ul>
+        <ul class="has-column">
             @foreach($tags as $tag)
                 <li>{{ $tag->name }}</li>
             @endforeach        
