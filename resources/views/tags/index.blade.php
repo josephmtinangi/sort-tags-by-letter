@@ -25,7 +25,11 @@
     <div class="container">
         <ul class="has-column">
             @foreach($tags as $tag)
-                <li>{{ $tag->name }}</li>
+                <li class="title is-5">
+                    <a href="/tags/{{ $tag->id }}">
+                        {{ $tag->name }}
+                    </a>
+                </li>
             @endforeach        
         </ul>
     </div>

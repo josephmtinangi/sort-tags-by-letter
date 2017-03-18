@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('tags', function () {
-    $tags = App\Tag::get(['name', 'color']);
+    $tags = App\Tag::get(['id', 'name', 'color']);
     
     return view('tags.index')->withTags($tags);
 });
