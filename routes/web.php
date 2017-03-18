@@ -19,8 +19,6 @@ Route::get('tags', function () {
     $tags = App\Tag::orderBy('name')->get()->groupBy(function ($tag) {
         return substr($tag->name, 0, 1);
     });
-
-    return $tags;
     
     return view('tags.index')->withTags($tags);
 });

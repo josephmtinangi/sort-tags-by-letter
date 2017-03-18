@@ -24,12 +24,19 @@
 <div class="section">
     <div class="container">
         <ul class="has-column">
-            @foreach($tags as $tag)
-                <li class="title is-5">
-                    <a href="/tags/{{ $tag->id }}">
-                        {{ $tag->name }}
-                    </a>
-                </li>
+            @foreach($tags as $letter => $tagCollection)
+                <div class="letter-group">
+                    <h3 class="title is-1 letter">{{ $letter }}</h3>
+                   <ul>
+                        @foreach($tagCollection as $tag)
+                            <li class="title is-5">
+                                <a href="/tags/{{ $tag->name }}">
+                                    {{ $tag->name }}
+                                </a>
+                            </li>
+                        @endforeach
+                   </ul>
+                </div>
             @endforeach        
         </ul>
     </div>
