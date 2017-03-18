@@ -9,6 +9,17 @@
 </head>
 <body>
 
+<div class="section hero is-info">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Tags</h1>
+            <p class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam laudantium commodi voluptatum eaque iste suscipit.
+            </p>
+        </div>
+    </div>
+</div>
+
 <div class="section">
     <div class="container">
         <ul>
