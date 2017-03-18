@@ -8,7 +8,26 @@
   -webkit-column-gap: 70px;
   -moz-column-gap: 70px;
   column-gap: 70px;
-  text-align: center;
+  text-align: cente;
+}
+
+.letter-group {
+  margin: 2em 0 4em;
+}
+
+.letter-group:first-child {
+  margin-top: 0;
+}
+
+.letter-group::last-child {
+  margin-bottom: 0;
+}
+
+.letter-group .letter {
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=app.css.map */
