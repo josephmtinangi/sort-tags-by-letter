@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('tags', function () {
-    $tags = App\Tag::all()->groupBy(function ($tag) {
+    $tags = App\Tag::orderBy('name')->get()->groupBy(function ($tag) {
         return substr($tag->name, 0, 1);
     });
 
