@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('tags', function () {
+    return App\Tags::all();
+});
