@@ -16,7 +16,11 @@ Route::get('/', function () {
 });
 
 Route::get('tags', function () {
-    $tags = App\Tag::get(['id', 'name', 'color']);
+    $tags = App\Tag::all()->groupBy(function ($tag) {
+        return substr($tag->name, 0, 1);
+    });
+
+    return $tags;
     
     return view('tags.index')->withTags($tags);
 });
