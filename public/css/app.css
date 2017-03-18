@@ -8,7 +8,7 @@
   -webkit-column-gap: 70px;
   -moz-column-gap: 70px;
   column-gap: 70px;
-  text-align: cente;
+  text-align: center;
 }
 
 .letter-group {
@@ -19,7 +19,7 @@
   margin-top: 0;
 }
 
-.letter-group::last-child {
+.letter-group:last-child {
   margin-bottom: 0;
 }
 
